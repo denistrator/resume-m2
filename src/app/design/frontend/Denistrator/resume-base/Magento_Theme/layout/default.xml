@@ -11,15 +11,15 @@
     </html>
     <body>
         <referenceContainer name="header.container">
-            <block template="Magento_Theme::header.phtml"/>
+            <block name="resume.header" template="Magento_Theme::header.phtml"/>
         </referenceContainer>
 
         <referenceContainer name="footer-container">
-            <block template="Magento_Theme::footer.phtml"/>
+            <block name="resume.footer" template="Magento_Theme::footer.phtml"/>
         </referenceContainer>
 
         <referenceContainer name="before.body.end">
-            <block template="Magento_Theme::js/google-analytics.phtml"/>
+            <block name="google.analytics" template="Magento_Theme::js/google-analytics.phtml"/>
         </referenceContainer>
 
         <referenceContainer name="header.panel.wrapper" remove="true"/>
