@@ -10,8 +10,10 @@
         <title>Денис Белевцов - Резюме</title>
     </head>
     <body>
-        <referenceContainer name="page.wrapper">
-            <block template="Magento_Theme::resume.phtml" before="before.body.end"/>
+        <referenceContainer name="main">
+            <block template="Magento_Theme::resume.phtml" after="content"/>
         </referenceContainer>
+
+        <referenceBlock name="cms_page" remove="true"/>
     </body>
 </page>
