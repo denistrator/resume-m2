@@ -1,0 +1,50 @@
+$grid-columns: 12 !default; 
+$grid-gutter: 15px !default; 
+$container-max-width: 1170px !default;
+$container-gutter: $grid-gutter !default;
+
+$breakpoint: ( 
+	xs: 480px, 
+	sm: 768px, 
+	md: 980px, 
+	lg: 1200px
+);
+
+.container {
+    max-width: $container-max-width;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: $container-gutter;
+    padding-right: $container-gutter;
+}
+
+.row {
+    @extend %cf;
+    margin: 0 (-$grid-gutter);
+}
+
+%cols-base {
+    padding-left: $grid-gutter;
+    padding-right: $grid-gutter;
+    float: left; 
+}
+
+@each $key, $val in $breakpoint {
+    @for $i from 1 through $grid-columns {
+        .col-#{$key}-#{$i} {
+            @extend %cols-base;
+        }    
+    }
+    @media all and (min-width: $val) {
+        @for $i from 1 through $grid-columns {
+            .col-#{$key}-#{$i} {
+                width: 100% / $grid-columns * $i;
+            }    
+        }
+        @for $i from 1 through $grid-columns {
+            .col-#{$key}-offset-#{$i} {
+                margin-left: 100% / $grid-columns * $i;
+            }
+        }
+    }
+}

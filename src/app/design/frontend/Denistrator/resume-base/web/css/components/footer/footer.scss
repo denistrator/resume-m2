@@ -1,0 +1,55 @@
+.footer	{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	position: relative;
+    z-index: 1;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: in-perc(60, 1070);
+	padding-right: in-perc(60, 1070);
+    margin-bottom: 15px;
+	@media screen and (min-width: 768px) {
+    	padding-left: 15px;
+		padding-right: 15px;
+	}
+	&:before,
+	&:after {
+		content: '';
+		display: block;
+
+		position: absolute;
+		z-index: -1;
+		left: 0;
+		right: .5px;
+
+		border: 1px solid $dark;
+
+		pointer-events: none;
+	}
+	&:before {
+		top: 0;
+		bottom: 30%;
+
+		border-bottom-width: 0;
+
+		transform: skewY(-2deg);
+		transform-origin: left;
+	}
+	&:after {
+		top: 30%;
+		bottom: 0;
+		left: 0;
+
+		border-top-width: 0;
+	}
+    &-name,
+    &-offer,
+    &-mail {
+    	margin: 8px 0;
+    }
+	
+	&-name {
+		text-transform: uppercase;
+	}
+}

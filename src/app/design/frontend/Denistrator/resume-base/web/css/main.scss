@@ -1,0 +1,15 @@
+@import 'normalize.scss';
+
+//@import 'built-in-partials/_service.scss';
+@import 'mixins.scss';
+@import 'fonts.scss';
+@import 'vars.scss';
+@import 'common.scss';
+
+//@import 'partials/_components.scss';
+@import 'components/header/header';
+@import 'components/skills/skills';
+@import 'components/education/education';
+@import 'components/experience/experience';
+@import 'components/portfolio/portfolio';
+@import 'components/footer/footer';

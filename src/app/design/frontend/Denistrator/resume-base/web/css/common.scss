@@ -1,0 +1,155 @@
+// Common styles of the project
+@import "global";
+@import "grid";
+// Grid without unused classes cleared by uncss
+@import "blocks";
+@import "type";
+// @import "btns";
+// @import "forms";
+
+::-webkit-scrollbar-track {
+    background-color: $light;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $light2;
+}
+
+::-webkit-resizer {
+    width: 7px;
+    height: 0;
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+html[lang=ru] {
+    .lang-en {
+        display: none;
+    }
+}
+
+html[lang=en] {
+    .lang-ru {
+        display: none;
+    }
+}
+
+body {
+    position: relative;
+    min-height: 100%;
+    min-height: 100vh;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.wrapper {
+    background-color: $light;
+    background-color: rgba($light, 0.98);
+}
+
+.container {
+    padding: 0 in-perc(60, 1070);
+}
+
+.content {
+    &-container {
+        @extend .container;
+        padding: 0;
+        @media screen and (min-width: 768px) {
+            padding: 0 in-perc(60, 1070);
+        }
+    }
+    counter-reset: section-number;
+    margin: 5% 0;
+    &-angled-edge {
+        @extend .block-inverse;
+        position: relative;
+        z-index: 1;
+        .light & {
+            color: $dark;
+        }
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: in-perc(60, 1070);
+        padding-right: in-perc(60, 1070);
+        @media screen and (min-width: 768px) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        &:before {
+            content: '';
+            display: block;
+
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+
+            border: 1px solid transparent;
+            @media (min-width: 768px) {
+                border-color: $dark;
+            }
+            background-color: $dark;
+            .light & {
+                background-color: transparent;
+            }
+
+            pointer-events: none;
+
+            transform: skewY(-2deg);
+        }
+    }
+}
+
+.section {
+    $a: 28px;
+    padding-left: $a;
+    page-break-inside: avoid;
+    &-head {
+    }
+    &-title:before {
+        content: "0" counter(section-number) ". ";
+        counter-increment: section-number;
+        user-select: none;
+        font-size: 70%;
+        margin-left: -$a;
+    }
+}
+
+.title {
+    margin: 0;
+    line-height: 1.2;
+}
+
+.desc {
+    font-size: 12px;
+    color: $light2;
+    .light & {
+        color: lighten($dark, 10%);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-image: linear-gradient(-45deg, $light2 50%, $dark 50%);
+    }
+    .wrapper {
+        overflow-y: auto;
+        overflow-x: hidden;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: in-perc(30, 1920);
+        box-shadow: 0 6px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+
+}
