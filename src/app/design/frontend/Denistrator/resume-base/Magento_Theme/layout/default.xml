@@ -11,7 +11,6 @@
     </html>
     <body>
         <referenceContainer name="before.body.end">
-            <block template="Magento_Theme::js/main.phtml"/>
             <block template="Magento_Theme::js/google-analytics.phtml"/>
         </referenceContainer>
 
