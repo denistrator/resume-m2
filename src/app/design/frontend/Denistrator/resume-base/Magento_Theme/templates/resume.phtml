@@ -4,6 +4,14 @@
  * bitch
  */
 ?>
+<?php
+
+use Magento\Framework\View\Element\Template;
+
+/**
+ * @var Template $block
+ */
+?>
 
 <div class="content-container">
     <div class="content">
@@ -12,249 +20,18 @@
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="ver-indents-child">
-                            <section class="section skills">
-                                <h3 class="title skills-title section-title"><span
-                                            class="lang-ru">Навыки</span> <span class="lang-en">Skills</span></h3>
-                                <p class="desc skills-desc"><span class="lang-ru">Могу, умею, практикую</span> <span
-                                            class="lang-en">Know it, use it</span></p>
-                                <ul class="skills-list">
-                                    <li class="skills-item"><span class="skills-skill">HTML</span> <span
-                                                class="skills-skill">CSS</span></li>
-                                    <li class="skills-item"><span class="skills-skill">CSS Animations</span> <span
-                                                class="skills-skill">Transforms</span> <span class="skills-skill">Sprites</span>
-                                    </li>
-                                    <li class="skills-item"><span class="skills-skill">SCSS</span> <span
-                                                class="skills-skill">LESS</span></li>
-                                    <li class="skills-item">Flexbox</li>
-                                    <li class="skills-item">Bootstrap</li>
-                                    <li class="skills-item"><span class="skills-skill">JavaScript</span> <span
-                                                class="skills-skill">jQuery</span></li>
-                                    <li class="skills-item"><span class="lang-ru">PHP (базовый уровень)</span> <span
-                                                class="lang-en">PHP (basics)</span></li>
-                                    <li class="skills-item"><span class="skills-skill">BEM</span> <span
-                                                class="skills-skill"> <span
-                                                    class="lang-ru">Модульная вёрстка</span> <span
-                                                    class="lang-en">Modular markup</span> </span>
-                                    </li>
-                                    <li class="skills-item"><span class="skills-skill">Handlebars</span> <span
-                                                class="skills-skill">Jade</span></li>
-                                    <li class="skills-item"><span class="skills-skill">NPM</span> <span
-                                                class="skills-skill">Grunt</span> <span
-                                                class="skills-skill">Gulp</span></li>
-                                    <li class="skills-item">Git</li>
-                                    <li class="skills-item"><span class="skills-skill">SVG</span> <span
-                                                class="skills-skill">Font Icons</span></li>
-                                    <li class="skills-item"><span class="skills-skill">Photoshop</span> <span
-                                                class="skills-skill">Zeplin</span> <span
-                                                class="skills-skill">Avocode</span>
-                                    </li>
-                                    <li class="skills-item">Pixel perfect</li>
-                                    <li class="skills-item"><span class="lang-ru">Семантическая вёрстка</span> <span
-                                                class="lang-en">Semantic markup</span></li>
-                                    <li class="skills-item">Jira</li>
-                                    <li class="skills-item"><span
-                                                class="lang-ru">Оптимизация для Google Pagespeed</span> <span
-                                                class="lang-en">Optimization for Google Pagespeed</span></li>
-                                    <li class="skills-item skills-item-special"><span class="lang-ru">Английский — грамматика "Pre-intermediate", легко читаю тех. документацию, могу вести переписку.</span>
-                                        <span class="lang-en">English grammar "Pre-Intermediate". Read technical documentation easily, can chat</span>
-                                    </li>
-                                </ul>
-                            </section>
+                            <?= $block->getChildHtml('skills') ?>
                         </div>
                     </div>
                     <div class="col-sm-8">
                         <div class="ver-indents-child">
-                            <section class="section education">
-                                <h3 class="title education-title section-title"><span
-                                            class="lang-ru">Обучение</span> <span class="lang-en">Education</span>
-                                </h3>
-                                <p class="desc education-desc"><span class="lang-ru">Приобретённые знания</span>
-                                    <span class="lang-en">What i learned</span>
-                                </p>
-                                <p class="education-courses">
-                                    <small class="education-date">11.2016</small>
-                                    <span class="lang-ru">Закончил курс</span> <span class="lang-en">Сompleted the course</span>
-                                    "
-                                    <a href="http://spalah.ua/kh/school/advanced-html-css/">Advanced HTML/CSS</a>"
-                                    <span class="lang-ru">в</span> <span class="lang-en">in</span> <a
-                                            href="http://spalah.ua/kh/school/">Spalah IT-school</a>. <span
-                                            class="lang-ru">Диплом с оценкой 5/5.</span> <span class="lang-en">Graduated with 5/5 score.</span>
-                                    (
-                                    <a href="pub/static/frontend/Denistrator/resume-base/en_US/misc/media/3-FHD-min.png"
-                                       class="lang-ru">Сертификат</a> <a
-                                            href="pub/static/frontend/Denistrator/resume-base/en_US/misc/media/3-FHD-min.png"
-                                            class="lang-en">Certificate</a> <span
-                                            class="line-separator">/</span> <a
-                                            href="pub/static/frontend/Denistrator/resume-base/en_US/misc/media/2-FHD-min.png"
-                                            class="lang-ru">Диплом</a> <a
-                                            href="pub/static/frontend/Denistrator/resume-base/en_US/misc/media/2-FHD-min.png"
-                                            class="lang-en">Diploma</a> )
-                                </p>
-                            </section>
+                            <?= $block->getChildHtml('education') ?>
                         </div>
                         <div class="ver-indents-child">
-                            <section class="section experience">
-                                <h3 class="title section-title"><span
-                                            class="lang-ru">Опыт</span> <span class="lang-en">Experience</span></h3>
-                                <p class="desc"><span
-                                            class="lang-ru">Использование технологий. Работа в команде</span> <span
-                                            class="lang-en">Using technlogies. Team work</span></p>
-                                <ul class="experience-list">
-                                    <li class="experience-item"><span
-                                                class="lang-ru">Вёрстка HTML/CSS — 4 года.</span> <span
-                                                class="lang-en">HTML/CSS Markup - 4 years.</span></li>
-                                    <li class="experience-item"><span
-                                                class="lang-ru">Работа в команде — 1 год.</span> <span
-                                                class="lang-en">Team work - 1 year.</span></li>
-                                    <li class="experience-item"><span class="lang-ru">14+ свёрстанных макетов за время самообучения.</span>
-                                        <span class="lang-en">14+ psd layouts made during self education.</span>
-                                    </li>
-                                    <li class="experience-item"><span class="lang-ru">11 свёрстанных макетов за время обучения на курсе</span>
-                                        <span class="lang-en">11 psd layouts made during studying on course</span> "<a
-                                                href="http://spalah.ua/kh/school/advanced-html-css/">Advanced
-                                            HTML/CSS</a>"
-                                    </li>
-                                </ul>
-                                <p><span class="lang-ru">Есть опыт вёрстки под Angular. Сейчас выполняю фронтенд задачи для Magento 1/2.</span>
-                                    <span class="lang-en">Have experience in markup for Angular. Currently developing FE for Magento 1/2.</span>
-                                </p>
-                            </section>
+                            <?= $block->getChildHtml('experience') ?>
                         </div>
                         <div class="ver-indents-child">
-                            <section class="section portfolio">
-                                <h3 class="title section-title"><span
-                                            class="lang-ru">Портфолио</span> <span class="lang-en">Portfolio</span>
-                                </h3>
-                                <p class="desc"><span class="lang-ru">Последние работы</span> <span class="lang-en">Last works</span>
-                                </p>
-                                <div class="portfolio-list-wrap">
-                                    <ul class="portfolio-list">
-                                        <li class="portfolio-item">
-                                            <a href="https://www.timberland.co.il/" class="portfolio-link">
-                                                <div class="portfolio-img-holder"><img
-                                                            src="pub/static/frontend/Denistrator/resume-base/en_US/images/content/project-timberland.svg"
-                                                            alt=""
-                                                            class="portfolio-img hasAlternate"> <img
-                                                            src="pub/static/frontend/Denistrator/resume-base/en_US/images/content/project-timberland_i.svg"
-                                                            alt="" class="portfolio-img portfolio-img-alternateImg">
-                                                </div>
-                                                <h4 class="portfolio-title"><span
-                                                            class="lang-ru">Timberland (Израиль)</span>
-                                                    <span class="lang-en">Timberland (Israel)</span>
-                                                </h4>
-                                                <span class="portfolio-item-label icon-magento"
-                                                      title="Magento 2 Project">Magento 2 Project</span>
-                                            </a>
-                                        </li>
-                                        <li class="portfolio-item">
-                                            <a href="https://www.nautica.co.il/" class="portfolio-link">
-                                                <div class="portfolio-img-holder"><img
-                                                            src="pub/static/frontend/Denistrator/resume-base/en_US/images/content/project-nautica.svg"
-                                                            alt=""
-                                                            class="portfolio-img hasAlternate"> <img
-                                                            src="pub/static/frontend/Denistrator/resume-base/en_US/images/content/project-nautica_i.svg"
-                                                            alt=""
-                                                            class="portfolio-img portfolio-img-alternateImg"></div>
-                                                <h4 class="portfolio-title"><span
-                                                            class="lang-ru">Nautica (Израиль)</span> <span
-                                                            class="lang-en">Nautica (Israel)</span></h4>
-                                                <span class="portfolio-item-label icon-magento"
-                                                      title="Magento 2 Project">Magento 2 Project</span>
-                                            </a>
-                                        </li>
-                                        <li class="portfolio-item">
-                                            <a href="https://www.layam.com/" class="portfolio-link">
-                                                <div class="portfolio-img-holder"><img
-                                                            src="pub/static/frontend/Denistrator/resume-base/en_US/images/content/project-layam.png"
-                                                            alt=""
-                                                            class="portfolio-img hasAlternate"> <img
-                                                            src="pub/static/frontend/Denistrator/resume-base/en_US/images/content/project-layam_i.png"
-                                                            alt=""
-                                                            class="portfolio-img portfolio-img-alternateImg"></div>
-                                                <h4 class="portfolio-title"><span
-                                                            class="lang-ru">Layam Sakal (Израиль)</span>
-                                                    <span class="lang-en">Layam Sakal (Israel)</span>
-                                                </h4>
-                                                <span class="portfolio-item-label icon-magento"
-                                                      title="Magento 2 Project">Magento 2 Project</span>
-                                            </a>
-                                        </li>
-                                        <li class="portfolio-item portfolio-collapse-pos">
-                                            <a href="http://denistrator.esy.es/mountains" class="portfolio-link">
-                                                <div class="portfolio-img-holder"><img
-                                                            src="pub/static/frontend/Denistrator/resume-base/en_US/images/content/project-1.png"
-                                                            alt=""
-                                                            class="portfolio-img"></div>
-                                                <h4 class="portfolio-title"><span class="lang-ru">Mountains</span>
-                                                    <span class="lang-en">Mountains</span>
-                                                </h4>
-                                            </a>
-                                            <a href="https://github.com/denistrator/training-01-mountains"
-                                               class="portfolio-github-link icon-github-logo"
-                                               title="View on GitHab"></a>
-                                        </li>
-                                        <li class="portfolio-item">
-                                            <a href="http://denistrator.esy.es/modest" class="portfolio-link">
-                                                <div class="portfolio-img-holder"><img
-                                                            src="pub/static/frontend/Denistrator/resume-base/en_US/images/content/project-2.png"
-                                                            alt=""
-                                                            class="portfolio-img"></div>
-                                                <h4 class="portfolio-title"><span class="lang-ru">Modest</span>
-                                                    <span class="lang-en">Modest</span>
-                                                </h4>
-                                            </a>
-                                            <a href="https://github.com/denistrator/spalah-lessons--lesson-8"
-                                               class="portfolio-github-link icon-github-logo"
-                                               title="View on GitHab"></a>
-                                        </li>
-                                        <li class="portfolio-item">
-                                            <a href="http://denistrator.esy.es/tajam" class="portfolio-link">
-                                                <div class="portfolio-img-holder"><img
-                                                            src="pub/static/frontend/Denistrator/resume-base/en_US/images/content/project-3.png"
-                                                            alt=""
-                                                            class="portfolio-img hasAlternate"> <img
-                                                            src="pub/static/frontend/Denistrator/resume-base/en_US/images/content/project-3_i.png"
-                                                            alt=""
-                                                            class="portfolio-img portfolio-img-alternateImg"></div>
-                                                <h4 class="portfolio-title"><span class="lang-ru">Tajam</span> <span
-                                                            class="lang-en">Tajam</span></h4>
-                                            </a>
-                                            <a href="https://github.com/denistrator/spalah-lessons--lesson-7"
-                                               class="portfolio-github-link icon-github-logo"
-                                               title="View on GitHab"></a>
-                                        </li>
-                                        <li class="portfolio-item">
-                                            <a href="http://denistrator.esy.es/yellow_moon" class="portfolio-link">
-                                                <div class="portfolio-img-holder"><img
-                                                            src="pub/static/frontend/Denistrator/resume-base/en_US/images/content/project-4.png"
-                                                            alt=""
-                                                            class="portfolio-img"></div>
-                                                <h4 class="portfolio-title"><span class="lang-ru">Yellow Moon</span>
-                                                    <span class="lang-en">Yellow Moon</span>
-                                                </h4>
-                                            </a>
-                                            <a href="https://github.com/denistrator/spalah-lessons--lesson-6"
-                                               class="portfolio-github-link icon-github-logo"
-                                               title="View on GitHab"></a>
-                                        </li>
-                                        <li class="portfolio-item old">
-                                            <a href="http://denistrator.esy.es/naturetour/" class="portfolio-link">
-                                                <div class="portfolio-img-holder"><img
-                                                            src="pub/static/frontend/Denistrator/resume-base/en_US/images/content/project-no-image.png"
-                                                            alt=""
-                                                            class="portfolio-img hasAlternate"> <img
-                                                            src="pub/static/frontend/Denistrator/resume-base/en_US/images/content/project-no-image_i.png"
-                                                            alt=""
-                                                            class="portfolio-img portfolio-img-alternateImg"></div>
-                                                <h4 class="portfolio-title"><span class="lang-ru">Naturetour</span>
-                                                    <span class="lang-en">Naturetour</span>
-                                                </h4>
-                                            </a>
-                                        </li>
-                                        <div class="portfolio-expander icon-double-arrow-down only-js"></div>
-                                    </ul>
-                                </div>
-                            </section>
+                            <?= $block->getChildHtml('portfolio') ?>
                         </div>
                     </div>
                 </div>

@@ -11,7 +11,12 @@
     </head>
     <body>
         <referenceContainer name="main">
-            <block template="Magento_Theme::resume.phtml" after="content"/>
+            <block template="Magento_Theme::resume.phtml" after="content">
+                <block template="Magento_Theme::sections/skills.phtml" as="skills"/>
+                <block template="Magento_Theme::sections/education.phtml" as="education"/>
+                <block template="Magento_Theme::sections/experience.phtml" as="experience"/>
+                <block template="Magento_Theme::sections/portfolio.phtml" as="portfolio"/>
+            </block>
         </referenceContainer>
 
         <referenceBlock name="cms_page" remove="true"/>
