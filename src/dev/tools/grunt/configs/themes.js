@@ -19,6 +19,16 @@
  *
  */
 module.exports = {
+    resumeBase: {
+        area: 'frontend',
+        name: 'Denistrator/resume-base',
+        locale: 'en_US',
+        dsl: 'scss',
+        files: [
+            'css/styles',
+            'css/print'
+        ]
+    },
     blank: {
         area: 'frontend',
         name: 'Magento/blank',
