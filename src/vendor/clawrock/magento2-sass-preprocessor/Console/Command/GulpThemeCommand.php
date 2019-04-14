@@ -117,6 +117,11 @@ class GulpThemeCommand extends Command
         $themeConfig = $this->fileHelper->readFileAsArray($themeConfigPath, 'js');
 
         if (empty($themeConfig)) {
+            $themeConfigPath = $file;
+            $themeConfig = $this->fileHelper->readFileAsArray($themeConfigPath, 'js');
+        }
+
+        if (empty($themeConfig)) {
             throw new FileSystemException(new Phrase('Theme config not found'));
         }
 
