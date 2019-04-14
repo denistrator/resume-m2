@@ -7,8 +7,13 @@
 -->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
-        <referenceContainer name="root">
-            <block template="Magento_Theme::resume.phtml"/>
+        <referenceContainer name="page.wrapper">
+            <block template="Magento_Theme::resume.phtml" before="before.body.end"/>
+        </referenceContainer>
+
+        <referenceContainer name="before.body.end">
+            <block template="Magento_Theme::js/header.phtml"/>
+            <block template="Magento_Theme::js/portfolio.phtml"/>
         </referenceContainer>
     </body>
 </page>

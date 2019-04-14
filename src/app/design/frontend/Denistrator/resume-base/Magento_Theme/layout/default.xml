@@ -6,7 +6,15 @@
  */
 -->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <html>
+        <attribute name="class" value="no-js"/>
+    </html>
     <body>
+        <referenceContainer name="before.body.end">
+            <block template="Magento_Theme::js/main.phtml"/>
+            <block template="Magento_Theme::js/google-analytics.phtml"/>
+        </referenceContainer>
+
         <referenceContainer name="header.container" remove="true"/>
         <referenceContainer name="page.top" remove="true"/>
         <referenceContainer name="footer-container" remove="true"/>
