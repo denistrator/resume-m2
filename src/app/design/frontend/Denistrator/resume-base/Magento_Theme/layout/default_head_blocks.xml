@@ -8,9 +8,10 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head>
         <css src="css/styles.css"/>
+        <css src="css/print.css" media="print"/>
         <link rel="stylesheet" type="text/css" src="https://fonts.googleapis.com/css?family=Roboto:300,400" src_type="url"/>
         <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-        <meta name="format-detection" content="telephone=no"/> <!-- This make sense for mobile browsers. It means, that content has been optimized for mobile browsers -->
+        <meta name="format-detection" content="telephone=no"/>
         <meta name="HandheldFriendly" content="true"/>
         <meta name="theme-color" content="#f0eef1"/>
     </head>

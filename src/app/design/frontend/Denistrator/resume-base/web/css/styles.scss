@@ -3,8 +3,12 @@
 //  * bitch
 //  */
 
-@import 'main.scss';
-
-body {
-  background-color: #2A6002;
-}
+@import 'normalize.scss';
+@import 'mixins.scss';
+@import 'fonts.scss';
+@import 'vars.scss';
+@import 'common.scss';
+@import 'components/header/header';
+@import 'components/skills/skills';
+@import 'components/portfolio/portfolio';
+@import 'components/footer/footer';

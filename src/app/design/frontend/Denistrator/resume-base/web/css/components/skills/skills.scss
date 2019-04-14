@@ -1,28 +1,33 @@
+// /**
+//  * Copyright © 2019 Denistrator. No rights reserved.
+//  * bitch
+//  */
+
 .skills {
     &-list {
         font-size: 14px;
         margin-bottom: 0;
     }
-    
+
     &-item {
         &-special {
             border-top: 1px solid white;
             padding: 15px 10px 0;
             margin: 15px -7px 0 0;
             list-style: none;
-            
+
             .light & {
                 border-top-color: inherit;
             }
         }
     }
-    
+
     &-skill {
         & + & {
             &:before {
                 content: ' / ';
                 color: $light2;
-                
+
                 .light & {
                     color: lighten($dark, 35%);
                 }

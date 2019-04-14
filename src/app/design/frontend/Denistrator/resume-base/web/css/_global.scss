@@ -1,136 +1,76 @@
+// /**
+//  * Copyright © 2019 Denistrator. No rights reserved.
+//  * bitch
+//  */
+
 html {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 *,
 :before,
 :after {
-	box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 html, body {
-	margin: 0;
-	padding: 0;
-	height: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 .wrapper {
-	
+
 }
 
 .container-fluid {
-	max-width: 1170px;
+    max-width: 1170px;
 }
 
 img {
-	max-width: 100%;
-	display: block;
-	height: auto;
-	margin: auto;
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: auto;
 }
 
 div[class *="logo-holder"],
 div[class *="img-holder"] {
-	font-size: 0;
+    font-size: 0;
 }
 
-// .js-fine-align-landscape {
-// 	position: absolute;
-// 	top: 0;
-// 	bottom: 0;
-//     left: -50%;
-//     right: -50%;
-//     height: 100%;
-//     max-width: none;
-//     width: auto;
-//     margin: auto;
-// }
-// .js-fine-align-portrait {
-// 	position: absolute;
-//     left: 0;
-//     right: 0;
-//     top: -100%;
-//     bottom: -100%;
-//     height: auto;
-//     max-width: none;
-//     width: 100%;
-//     margin: auto;
-// }
-
-// .inline-block-align > * {
-// 	display: inline-block;
-// 	vertical-align: middle;
-// }
-
-// .text {
-// 	&-center {
-// 		text-align: center;
-// 	}
-// 	&-uppercase {
-// 		text-transform: uppercase;
-// 	}
-// 	&-accent {
-// 		// color: $accent;
-// 	}
-// }
-
-// .pull-left {
-// 	float: left;
-// }
-// .pull-right {
-// 	float: right;
-// }
-
-// .po {
-// 	&r {
-// 		position: relative;
-// 	}
-// 	&a {
-// 		position: absolute;
-// 	}
-// 	&s {
-// 		position: static;
-// 	}
-// }
 .ver-indents {
-	&-parent {
-		overflow: hidden;
-		margin-top: -$grid-gutter / 2;
-		margin-bottom: -$grid-gutter / 2;
-	}
-	&-child {
-		padding-top: $grid-gutter / 2;
-		padding-bottom: $grid-gutter / 2;
-	}
-}
+    &-parent {
+        overflow: hidden;
+        margin-top: -$grid-gutter / 2;
+        margin-bottom: -$grid-gutter / 2;
+    }
 
-// .d {
-// 	&n {
-// 		display: none !important;
-// 	}
-// 	&b {
-// 		display: block !important;
-// 	}
-// }
+    &-child {
+        padding-top: $grid-gutter / 2;
+        padding-bottom: $grid-gutter / 2;
+    }
+}
 
 .only {
-	&-print {
-		display: none !important;
-		@media print {
-			display: initial !important;
-		}
-	}
-	&-js {
-		.no-js & {
-			display: none;
-		}
-	}
+    &-print {
+        display: none !important;
+        @media print {
+            display: initial !important;
+        }
+    }
+
+    &-js {
+        .no-js & {
+            display: none;
+        }
+    }
 }
 
 .no {
-	&-print {
-		@media print {
-			display: none !important;
-		}
-	}
+    &-print {
+        @media print {
+            display: none !important;
+        }
+    }
 }

@@ -1,3 +1,8 @@
+// /**
+//  * Copyright © 2019 Denistrator. No rights reserved.
+//  * bitch
+//  */
+
 /* Your custom fonts here */
 
 /* Example
@@ -18,65 +23,76 @@ $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
 */
 
 @font-face {
-  font-family: 'icomoon';
-  src:  url('../fonts/icomoon/icomoon.eot?l2hxes');
-  src:  url('../fonts/icomoon/icomoon.eot?l2hxes#iefix') format('embedded-opentype'),
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon/icomoon.eot?l2hxes');
+    src: url('../fonts/icomoon/icomoon.eot?l2hxes#iefix') format('embedded-opentype'),
     url('../fonts/icomoon/icomoon.woff2') format('woff2'),
     url('../fonts/icomoon/icomoon.woff?l2hxes') format('woff'),
     url('../fonts/icomoon/icomoon.ttf?l2hxes') format('truetype'),
     url('../fonts/icomoon/icomoon.svg?l2hxes#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-weight: normal;
+    font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
 
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .icon-mail-black-envelope-symbol:before {
-  content: "\e900";
+    content: "\e900";
 }
+
 .icon-phone-receiver:before {
-  content: "\e901";
+    content: "\e901";
 }
+
 .icon-skype-logo:before {
-  content: "\e902";
+    content: "\e902";
 }
+
 .icon-vk:before {
-  content: "\e903";
+    content: "\e903";
 }
+
 .icon-github-logo:before {
-  content: "\e904";
+    content: "\e904";
 }
+
 .icon-linkedin-logo:before {
-  content: "\e905";
+    content: "\e905";
 }
+
 .icon-pdf-file-symbol:before {
-  content: "\e906";
+    content: "\e906";
 }
+
 .icon-locate:before {
-  content: "\e907";
+    content: "\e907";
 }
+
 .icon-sun:before {
-  content: "\e908";
+    content: "\e908";
 }
+
 .icon-moon:before {
-  content: "\e909";
+    content: "\e909";
 }
+
 .icon-double-arrow-down:before {
-  content: "\e90a";
+    content: "\e90a";
 }
+
 .icon-magento:before {
-  content: "\e90b";
+    content: "\e90b";
 }

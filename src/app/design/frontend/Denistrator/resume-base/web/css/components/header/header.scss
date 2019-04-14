@@ -1,109 +1,124 @@
+// /**
+//  * Copyright © 2019 Denistrator. No rights reserved.
+//  * bitch
+//  */
+
 $links-size: 30px !default;
+
 .header {
-	@extend %cf;
-	padding-top: in-perc(100, 780);
-	margin-bottom: 15px;
-	&-text {
-		float: left;
-	}
-	&-name {
-		font-size: 32px;
-		margin: 0;
-		line-height: 1.2;
-		font-weight: 300;
-	}
-	&-pos {
-		margin: 4px 0 0;
-		color: #99979c;
-		&:before {
-			content: '//';
-			speak: none;
-		}
-	}
-	&-links {
-		@extend %nl;
-		font-size: 0;
-		text-align: right;
-		margin: -3px;
-		&-item {
-			display: inline-block;
-			overflow: hidden;
-			border: 3px solid #000;
-			margin: 3px;
-			font-size: initial;
-			max-width: $links-size;
-			min-width: $links-size + 6;
+    @extend %cf;
+    padding-top: in-perc(100, 780);
+    margin-bottom: 15px;
 
-			transition: max-width .45s linear;
-			&:hover {
-				.header-link {
-					color: #33b5e5;
-					background-color: rgba(white, 0.15);
-				}
-			}
-			@media screen and (min-width: 768px) {
-				&:hover {
-					max-width: 302px;
-				}
-			}
-			@media print {
-				max-width: initial;
-				border: none;
-			}
-			&--mobile-open {
-				@media screen and (max-width: 768px) {
-					&:hover {
-						max-width: 302px;
-					}
-				}
-			}
-		}
-	}
-	&-link {
-		display: table;
-		width: 100%;
-		overflow: hidden;
-		color: inherit;
-		height: $links-size;
-		white-space: nowrap;
-		text-decoration: none;
+    &-text {
+        float: left;
+    }
 
-		background: transparent;
-		border: none;
-		padding: 0;
+    &-name {
+        font-size: 32px;
+        margin: 0;
+        line-height: 1.2;
+        font-weight: 300;
+    }
 
-		transition: color .25s linear;
-		&:before {
-			display: table-cell;
-			vertical-align: middle;
-			text-align: center;
-			min-width: 30px;
-			font-size: 24px;
+    &-pos {
+        margin: 4px 0 0;
+        color: #99979c;
 
-			@media print {
-				display: none;
-			}
-		}
+        &:before {
+            content: '//';
+            speak: none;
+        }
+    }
 
-		&-text {
-			display: table-cell;
-			vertical-align: middle;
-			padding: 0 8px;
-			font-size: 13px;
-			font-family: Roboto;
-		}
-	}
+    &-links {
+        @extend %nl;
+        font-size: 0;
+        text-align: right;
+        margin: -3px;
+
+        &-item {
+            display: inline-block;
+            overflow: hidden;
+            border: 3px solid #000;
+            margin: 3px;
+            font-size: initial;
+            max-width: $links-size;
+            min-width: $links-size + 6;
+            transition: max-width .45s linear;
+
+            &:hover {
+                .header-link {
+                    color: #33b5e5;
+                    background-color: rgba(white, 0.15);
+                }
+            }
+
+            @media screen and (min-width: 768px) {
+                &:hover {
+                    max-width: 302px;
+                }
+            }
+
+            @media print {
+                max-width: initial;
+                border: none;
+            }
+
+            &--mobile-open {
+                @media screen and (max-width: 768px) {
+                    &:hover {
+                        max-width: 302px;
+                    }
+                }
+            }
+        }
+    }
+
+    &-link {
+        display: table;
+        width: 100%;
+        overflow: hidden;
+        color: inherit;
+        height: $links-size;
+        white-space: nowrap;
+        text-decoration: none;
+        background: transparent;
+        border: none;
+        padding: 0;
+        transition: color .25s linear;
+
+        &:before {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            min-width: 30px;
+            font-size: 24px;
+
+            @media print {
+                display: none;
+            }
+        }
+
+        &-text {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 0 8px;
+            font-size: 13px;
+            font-family: Roboto;
+        }
+    }
 }
 
 .lang-toggle {
-	&-text {
-		font-size: 17px;
+    &-text {
+        font-size: 17px;
         text-transform: uppercase;
-	}
+    }
 }
 
 .reading-mode-toggle {
-	&.dark:before {
-		content: "\e909";
-	}
+    &.dark:before {
+        content: "\e909";
+    }
 }
