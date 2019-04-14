@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2019 Denistrator. No rights reserved.
+ * bitch
+ */
+-->
+<layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_layout.xsd">
+    <container name="root">
+        <container name="after.body.start" as="after.body.start" before="-" label="Page Top"/>
+        <container name="page.wrapper" as="page_wrapper" htmlTag="div" htmlClass="page-wrapper">
+            <container name="before.body.end" as="before_body_end" after="-" label="Page Bottom"/>
+        </container>
+    </container>
+</layout>
