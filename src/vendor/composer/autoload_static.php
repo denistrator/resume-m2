@@ -74,10 +74,10 @@ class ComposerStaticInit58a359da2dbd85d71b3a3d73aa92b215
         '22b78ee29fd052ffce7e15e9173179f9' => __DIR__ . '/..' . '/magento/module-inventory-source-selection-api/registration.php',
         '5c7dcd6ec83d6cf2988a97cdcba365ed' => __DIR__ . '/..' . '/magento/module-catalog-rule/registration.php',
         'beef4a50b960435d4b145e8d222f5f10' => __DIR__ . '/..' . '/magento/module-configurable-product/registration.php',
+        '4a78493fd48e24e9ec5cd7b77605aa2f' => __DIR__ . '/..' . '/magento/module-developer/registration.php',
         'cf44f9b1253939f955772534aabbf624' => __DIR__ . '/..' . '/magento/module-grouped-product/registration.php',
         '069005ffe7b4e7c23b0b9b5c1807ec74' => __DIR__ . '/..' . '/magento/module-paypal/registration.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
-        '4a78493fd48e24e9ec5cd7b77605aa2f' => __DIR__ . '/..' . '/magento/module-developer/registration.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         '19b03cc33c349b5e5fbc6577c2f9dc87' => __DIR__ . '/..' . '/magento/module-catalog-url-rewrite/registration.php',
         '39607b7536d6ce26556aaeb1275f82dd' => __DIR__ . '/..' . '/magento/framework-bulk/registration.php',
@@ -255,6 +255,7 @@ class ComposerStaticInit58a359da2dbd85d71b3a3d73aa92b215
         '3109cb1a231dcd04bee1f9f620d46975' => __DIR__ . '/..' . '/paragonie/sodium_compat/autoload.php',
         'aa75ea0761a2f40c1f3b32ad314f86c4' => __DIR__ . '/..' . '/phpseclib/mcrypt_compat/lib/mcrypt.php',
         '153a7817726e1caca4e6c3b7bc76f329' => __DIR__ . '/..' . '/temando/module-shipping-m2/registration.php',
+        '220b2728c385b3bc7841059e6bca64ee' => __DIR__ . '/..' . '/clawrock/magento2-sass-preprocessor/registration.php',
         'eda65932675b68b5aee4503e0762d64d' => __DIR__ . '/..' . '/magento/magento2-functional-testing-framework/src/Magento/FunctionalTestingFramework/_bootstrap.php',
         'b4cf39431a4b949eea8aa69ebb3d39da' => __DIR__ . '/../..' . '/app/etc/NonComposerComponentRegistration.php',
     );
@@ -596,6 +597,7 @@ class ComposerStaticInit58a359da2dbd85d71b3a3d73aa92b215
         'L' => 
         array (
             'League\\Container\\' => 17,
+            'Leafo\\ScssPhp\\' => 14,
         ),
         'K' => 
         array (
@@ -656,6 +658,7 @@ class ComposerStaticInit58a359da2dbd85d71b3a3d73aa92b215
             'Codeception\\PHPUnit\\' => 20,
             'Codeception\\Extension\\' => 22,
             'Codeception\\' => 12,
+            'ClawRock\\SassPreprocessor\\' => 26,
         ),
         'B' => 
         array (
@@ -1880,6 +1883,10 @@ class ComposerStaticInit58a359da2dbd85d71b3a3d73aa92b215
         array (
             0 => __DIR__ . '/..' . '/league/container/src',
         ),
+        'Leafo\\ScssPhp\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/leafo/scssphp/src',
+        ),
         'Klarna\\Ordermanagement\\' => 
         array (
             0 => __DIR__ . '/..' . '/klarna/module-ordermanagement',
@@ -2024,6 +2031,10 @@ class ComposerStaticInit58a359da2dbd85d71b3a3d73aa92b215
         array (
             0 => __DIR__ . '/..' . '/codeception/codeception/src/Codeception',
             1 => __DIR__ . '/..' . '/codeception/stub/src',
+        ),
+        'ClawRock\\SassPreprocessor\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/clawrock/magento2-sass-preprocessor',
         ),
         'Braintree\\' => 
         array (
