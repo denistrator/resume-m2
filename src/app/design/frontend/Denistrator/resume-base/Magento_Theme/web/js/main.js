@@ -8,7 +8,7 @@ define([], function () {
 
     var userTime = new Date();
     if (userTime.getHours() > 10 && userTime.getHours() < 16) {
-        document.querySelector('.page').classList.toggle('light');
+        document.querySelector('body').classList.toggle('light');
         document.querySelector('.reading-mode-toggle').classList.toggle('dark');
     }
 
