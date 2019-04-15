@@ -1,0 +1,46 @@
+<?php
+/**
+ * Copyright © 2019 Denistrator. No rights reserved.
+ * bitch
+ */
+?>
+<?php
+
+use Magento\Framework\View\Element\Template;
+
+/**
+ * @var Template $block
+ */
+?>
+<?php
+$baseUrl = $block->getViewFileUrl('/');
+
+$portfolioItem = $block->getData('portfolio_item');
+$_imageUrl = $baseUrl . '/images/content/' . $portfolioItem['imgPath'] . '.' . $portfolioItem['imgExt'];
+$_imageAlternateUrl = $baseUrl . '/images/content/' . $portfolioItem['imgPath'] . '_i.' . $portfolioItem['imgExt'];
+$_hasAlternateImage = isset($portfolioItem['alternateImg']) ? 'hasAlternate' : '';
+?>
+<li class="portfolio-item <?= $portfolioItem['mod'] ?? '' ?>">
+    <a href="<?= $portfolioItem['link'] ?>" class="portfolio-link">
+        <div class="portfolio-img-holder">
+            <img src="<?= $_imageUrl ?>" class="portfolio-img <?= $_hasAlternateImage ?>">
+            <?php if ($_hasAlternateImage): ?>
+                <img src="<?= $_imageAlternateUrl ?>" class="portfolio-img portfolio-img-alternateImg">
+            <?php endif; ?>
+        </div>
+        <h4 class="portfolio-title">
+            <span class="lang-ru"><?= $portfolioItem['titleRU'] ?></span>
+            <span class="lang-en"><?= $portfolioItem['titleEN'] ?></span>
+        </h4>
+        <?php if (isset($portfolioItem['labels'])): ?>
+            <?php foreach ($portfolioItem['labels'] as $label): ?>
+                <span class="portfolio-item-label icon-<?= $label['icon'] ?>"
+                      title="<?= $label['text'] ?>"><?= $label['text'] ?></span>
+            <?php endforeach; ?>
+        <?php endif; ?>
+    </a>
+    <?php if (isset($portfolioItem['githubLink'])): ?>
+        <a href="<?= $portfolioItem['githubLink'] ?>" class="portfolio-github-link icon-github-logo"
+           title="View on GitHab"></a>
+    <?php endif; ?>
+</li>

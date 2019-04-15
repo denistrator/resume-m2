@@ -9,7 +9,7 @@ define([], function () {
     var readingModeToggle = document.querySelector('.reading-mode-toggle');
 
     readingModeToggle.addEventListener('click', function () {
-        var body = document.querySelector('body.page');
+        var body = document.querySelector('body');
 
         body.classList.toggle('light');
 

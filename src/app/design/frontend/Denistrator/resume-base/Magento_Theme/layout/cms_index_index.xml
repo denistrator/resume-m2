@@ -15,7 +15,9 @@
                 <block name="resume.sections.skills" template="Magento_Theme::sections/skills.phtml" as="skills"/>
                 <block name="resume.sections.education" template="Magento_Theme::sections/education.phtml" as="education"/>
                 <block name="resume.sections.experience" template="Magento_Theme::sections/experience.phtml" as="experience"/>
-                <block name="resume.sections.portfolio" template="Magento_Theme::sections/portfolio.phtml" as="portfolio"/>
+                <block name="resume.sections.portfolio" class="Denistrator\Theme\Block\Sections\Portfolio" template="Magento_Theme::sections/portfolio.phtml" as="portfolio">
+                    <block name="resume.sections.portfolio.item" template="Magento_Theme::sections/portfolio-item.phtml" as="portfolio_item"/>
+                </block>
             </block>
         </referenceContainer>
 
